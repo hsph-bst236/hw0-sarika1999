@@ -3,7 +3,7 @@
 fibonacci <- function(n) {
   ### Your code here
 
-  return(1)
+  cat(1)
 }
 
 args <- commandArgs(trailingOnly = TRUE)
