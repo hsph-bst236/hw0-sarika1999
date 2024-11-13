@@ -19,7 +19,7 @@ jobs:
       with:
         test-name: Correctness
         setup-command: ''
-        command: "[ -f fibonacci.py ] && python3 src/fibonacci.py 1 || Rscript src/fibonacci.R 1"
+        command: "[ -f src/fibonacci.py ] && python3 src/fibonacci.py 1 || Rscript src/fibonacci.R 1"
         expected-output: '1'
         comparison-method: exact
         timeout: 10
