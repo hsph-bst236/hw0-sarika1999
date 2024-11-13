@@ -18,8 +18,8 @@ jobs:
       uses: classroom-resources/autograding-io-grader@v1
       with:
         test-name: Correctness
-        setup-command: ''
-        command: Rscript src/fibonacci.R
+        setup-command:
+        command: [ -f fibonacci.py ] && python3 src/fibonacci.py || Rscript src/fibonacci.R
         input: '1'
         expected-output: '1'
         comparison-method: exact
